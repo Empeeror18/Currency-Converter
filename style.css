@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    
+}
+
+.top-msg{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+
+.top-msg h4{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.30rem;
+    color: rgb(0, 0, 0);
+}
+
+form{
+    font-size: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+form select, button, input{
+    border: none;
+    outline: none;
+}
+
+form input{
+    border-radius: 0.2rem;
+    border: 1px solid lightgray;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
