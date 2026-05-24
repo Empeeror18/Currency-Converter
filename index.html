@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+    
+    <!--Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,38 +18,40 @@
 </head>
 <body>
     <div class="container">
+        <div class="top-msg">
         <h2>1USD TO NPR - Convert US Dollars To Rupees</h2>
         <h4>Currency Converter</h2>
-    </div>
+        </div>
     <form>
-        
         <div class="dropdown">
             <div class="from">
                 <p>From</p>
                 <div class="select-container">
-                    <div class="amount">
                         <input value="1" type="text">
-                    </div>
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="USD Flag">
                     <select name="from">
-                        <option value="NPR">NPR</option>
                         <option value="USD">USD</option>
+                        <option value="NPR">NPR</option>
                     </select>
-                </div>
+                             </div>
+              </div>
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              <div class="to">
+            <div class="to">
                 <p>To</p>
                 <div class="select-container">
-                    <div class="amount">
                         <input value="1" type="text">
-                    </div>
-                    <select name="from">
-                        <option value="USD">USD</option>
+                    <img src="https://flagsapi.com/NP/flat/64.png" alt="NPR Flag">
+                        <select name="to">
                         <option value="NPR">NPR</option>
+                        <option value="USD">USD</option>
                     </select>
+                    
                 </div>
             </div>
-            <div class="msg">1USD = 153NPR</div>
         </div>
+        <div class="msg">1USD = 153NPR</div>
+        <div class="timer">Last updated: <span id="last-updated"></span></div>
+    </div>
     </form>
 </body>
 </html>
