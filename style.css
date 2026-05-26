@@ -80,6 +80,16 @@ form input {
   background-color: rgba(241, 241, 241, 0.849);
 }
 
+.fa-arrow-right-arrow-left {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+.fa-arrow-right-arrow-left:hover {
+  transform: rotate(180deg);
+  color: rgb(58, 58, 176);
+}
+
 .select-container img {
   width: 2rem;
   height: 2rem;
