@@ -3,6 +3,7 @@ const BASE_URL =
 const dropdowns = document.querySelectorAll(".dropdown select");
 const message = document.querySelector(".msg");
 const time = document.querySelector(".timer");
+const main = document.querySelector("#main");
 
 for (let select of dropdowns) {
   for (let curCode in countryList) {
@@ -64,6 +65,8 @@ const getExchangeRate = async () => {
     const totalExchangedAmount = (amount * exchangeRate).toFixed(2);
     document.querySelector(".to input").value = totalExchangedAmount;
     message.innerText = `1 ${fromCurrency} = ${exchangeRate} ${toCurrency}`;
+    //1USD TO NPR - Convert US Dollars To Rupees
+    main.innerText = `${amountInput.value} ${fromCurrency} to ${toCurrency} - Convert ${fromCurrency} to ${toCurrency}`;  
     time.innerText = `Last Updated: ${data.date}`;
   } catch (err) {
     message.innerText = "Failed to fetch exchange rate. Try again.";
